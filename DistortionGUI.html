@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 20.0px 'Helvetica Neue'; color: #0a0a0a; -webkit-text-stroke: #0a0a0a}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #0a0a0a; -webkit-text-stroke: #0a0a0a; background-color: #eceff2}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #7f0be0; -webkit-text-stroke: #7f0be0; background-color: #eceff2}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #0a0a0a; -webkit-text-stroke: #0a0a0a; background-color: #eceff2; min-height: 16.0px}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #18702b; -webkit-text-stroke: #18702b; background-color: #eceff2}
+    span.s1 {font-kerning: none; background-color: #eceff2}
+    span.s2 {font-kerning: none}
+    span.s3 {font-kerning: none; color: #0a0a0a; -webkit-text-stroke: 0px #0a0a0a}
+    span.s4 {font-kerning: none; color: #7f0be0; -webkit-text-stroke: 0px #7f0be0}
+    span.s5 {font-kerning: none; color: #a3450b; -webkit-text-stroke: 0px #a3450b}
+    span.s6 {font-kerning: none; color: #18702b; -webkit-text-stroke: 0px #18702b}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">html</span></p>
+<p class="p2"><span class="s2">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p3"><span class="s3">&lt;</span><span class="s2">html</span><span class="s3">&gt;</span></p>
+<p class="p3"><span class="s3">&lt;</span><span class="s2">head</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;</span><span class="s4">title</span><span class="s2">&gt;Web Audio Distortion with THD&lt;/</span><span class="s4">title</span><span class="s2">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;</span><span class="s4">style</span><span class="s2">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>body { font-family: sans-serif; }</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>#waveform-canvas { border: </span><span class="s5">1</span><span class="s2">px solid black; }</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;/</span><span class="s4">style</span><span class="s2">&gt;</span></p>
+<p class="p3"><span class="s3">&lt;/</span><span class="s2">head</span><span class="s3">&gt;</span></p>
+<p class="p3"><span class="s3">&lt;</span><span class="s2">body</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;</span><span class="s4">h1</span><span class="s2">&gt;Distortion with THD Control&lt;/</span><span class="s4">h1</span><span class="s2">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;</span><span class="s4">div</span><span class="s2">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>&lt;</span><span class="s4">label</span><span class="s2"> for=</span><span class="s6">"thd-slider"</span><span class="s2">&gt;THD Percentage:&lt;/</span><span class="s4">label</span><span class="s2">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>&lt;</span><span class="s4">input</span><span class="s2"> type=</span><span class="s6">"range"</span><span class="s2"> id=</span><span class="s6">"thd-slider"</span><span class="s2"> min=</span><span class="s6">"0"</span><span class="s2"> max=</span><span class="s6">"100"</span><span class="s2"> value=</span><span class="s6">"0"</span><span class="s2">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>&lt;</span><span class="s4">span</span><span class="s2"> id=</span><span class="s6">"thd-value"</span><span class="s2">&gt;</span><span class="s5">0</span><span class="s2">%&lt;/</span><span class="s4">span</span><span class="s2">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;/</span><span class="s4">div</span><span class="s2">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;</span><span class="s4">button</span><span class="s2"> id=</span><span class="s6">"start-button"</span><span class="s2">&gt;Start Playback&lt;/</span><span class="s4">button</span><span class="s2">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;</span><span class="s4">button</span><span class="s2"> id=</span><span class="s6">"stop-button"</span><span class="s2">&gt;Stop Playback&lt;/</span><span class="s4">button</span><span class="s2">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;</span><span class="s4">h2</span><span class="s2">&gt;Waveform Comparison&lt;/</span><span class="s4">h2</span><span class="s2">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;</span><span class="s4">canvas</span><span class="s2"> id=</span><span class="s6">"waveform-canvas"</span><span class="s2"> width=</span><span class="s6">"600"</span><span class="s2"> height=</span><span class="s6">"200"</span><span class="s2">&gt;&lt;/</span><span class="s4">canvas</span><span class="s2">&gt;</span></p>
+<p class="p4"><span class="s2"></span><br></p>
+<p class="p5"><span class="s3"><span class="Apple-converted-space">    </span>&lt;</span><span class="s4">script</span><span class="s3"> src=</span><span class="s2">"distortion.js"</span><span class="s3">&gt;&lt;/</span><span class="s4">script</span><span class="s3">&gt;</span></p>
+<p class="p3"><span class="s3">&lt;/</span><span class="s2">body</span><span class="s3">&gt;</span></p>
+<p class="p3"><span class="s3">&lt;/</span><span class="s2">html</span><span class="s3">&gt;</span></p>
+</body>
+</html>
